@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Lintang</title>
+        <style>
+            body {
+                background: green;
+                font-family: verdana;
+                color: white;
+                padding: 150px;
+            }
+
+            h1 {
+                font-size: 72px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 32px;
+                text-align: center;
+            }
+
+            ul, li {
+                text-align: center;
+            }
+
+            form {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <%- include('parsial/header') %>
+        <p>~ Tambah Menu ~</p>
+        <form method="POST" enctype="multipart/form-data" action="/product/add">
+            <input type="text" placeholder="Name" name="name" required><br>
+            <input type="number" placeholder="Price" name="price" required><br>
+            <input type="text" placeholder="Description" name="description" required><br>
+            <input type="file" name="product_image" accept="image/*" required><br>
+
+            <input type="submit" value="SUBMIT">
+        </form>
+
+        <p>~ Daftar Menu ~</p>
+        <ul>
+            <%
+            for (var i=0; i<products.length; i++){
+            %>
+                <li><a href="/dua/<%= products[i].id %>"><%= products[i].name %></a> - <%= products[i].price %></li>
+            <%
+            }
+            %>
+        </ul>
+    </body>
+
+</html>

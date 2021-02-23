@@ -1,0 +1,39 @@
+Design Layout React Component:
+Buatlah layout timeline instagram yang terdiri dari beberapa bagian:
+    a.  Timeline
+        - Header(logo, search, navbar -> Home, Explore)
+        - Timeline(profile pict, account name, image(1 saja), icons(like, comment, send msg), ... likes, image desc)
+    b. Explore
+        - sample" gambar
+
+React
+1. Fake JSON API -> buatlah 5-10 dummy data
+    - Buatlah dummy data untuk Timeline yang terdiri dari data:
+        {
+            profile_pict_url,
+            account_name,
+            image_url,
+            likes,
+            description
+        }
+    - Buatlah dummy data untuk explore yang terdiri dari data:
+        {
+            image_url
+        }
+
+2. Hit Fake JSON API yang kalian buat, dan tampilkan di layout Timeline dan Explore yang sebelumnya kalian buat.
+Gunakan hal-hal berikut:
+-   Axios
+-   Mounting/ComponentWillMount
+-   State
+-   Props
+-   .map
+-   Route
+-   Link
+
+
+Submit:
+Paling lama 7 Feb 2021 jam 4 sore.
+Buatlah private repository Ujian_Front-End_JCWMAH-0204_{nama}
+invite vincentwardhana33@gmail.com sebagai collaborator
+kirim link private repo kalian ke operational@purwadhika.com

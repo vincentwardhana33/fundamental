@@ -1,0 +1,42 @@
+<head>
+    <title>Lintang</title>
+    <style>
+        body {
+            background: green;
+            font-family: verdana;
+            color: white;
+            padding: 150px;
+        }
+
+        h1 {
+            font-size: 72px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        ul, li {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <%- include('parsial/header') %>
+    <p>
+        <img src="http://localhost:3001/assets/images/<%= product.image_filename %>">
+    </p>
+    <p>
+        <%= product.name %>
+    </p>
+    <p>
+        <%= product.price %>
+    </p>
+    <p>
+        <%= product.description %>
+    </p>
+</body>
